@@ -2694,6 +2694,255 @@ section,
   }
 }
 
+/* ==================================================
+CASE STUDY PAGE
+================================================== */
+
+.case-study-hero {
+  padding: 140px 0 100px;
+  text-align: center;
+}
+
+.case-study-hero .eyebrow {
+  display: inline-block;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.case-study-hero h1 {
+  font-size: clamp(48px, 8vw, 90px);
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -4px;
+  max-width: 1100px;
+  margin: auto auto 30px;
+}
+
+.case-study-hero h1 .highlight {
+  color: var(--accent-color);
+}
+
+.case-study-hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* ==================================================
+FULL WIDTH IMAGE
+================================================== */
+
+.showcase-image-section {
+  padding-top: 0;
+}
+
+.showcase-image-wrapper {
+  padding: 0 30px;
+}
+
+.showcase-image-wrapper img {
+  width: 100%;
+  border-radius: 28px;
+  display: block;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease;
+}
+
+.showcase-image-wrapper img:hover {
+  transform: translateY(-5px);
+}
+
+/* ==================================================
+CONTENT SECTION
+================================================== */
+
+.case-study-content {
+  padding: 120px 0;
+}
+
+.case-study-content .content-block {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.case-study-content h2 {
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.08;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+.case-study-content p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+/* ==================================================
+MEDIA GRID
+================================================== */
+
+.media-showcase {
+  padding: 120px 0;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 28px;
+}
+
+.video-box {
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 680px;
+  background: var(--surface-color);
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.side-images img {
+  width: 100%;
+  height: calc(50% - 14px);
+  object-fit: cover;
+  border-radius: 24px;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.side-images img:hover {
+  transform: translateY(-6px);
+}
+
+/* ==================================================
+FEATURE GRID
+================================================== */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 70px;
+}
+
+.feature-card {
+  background: var(--surface-color);
+  border-radius: 24px;
+  padding: 40px 35px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  transition: 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* ==================================================
+CTA
+================================================== */
+
+.case-cta {
+  text-align: center;
+  padding: 140px 0;
+}
+
+.case-cta h2 {
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.08;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+}
+
+.case-cta p {
+  max-width: 760px;
+  margin: auto auto 40px;
+  line-height: 1.9;
+  font-size: 1.08rem;
+}
+
+.case-cta .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 38px;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.case-cta .cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-box {
+    min-height: auto;
+  }
+
+  .side-images img {
+    height: auto;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-image-wrapper {
+    padding: 0 15px;
+  }
+
+  .case-study-hero {
+    padding-top: 120px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
