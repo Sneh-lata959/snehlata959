@@ -2794,7 +2794,7 @@ MEDIA GRID
 
 .media-grid {
   display: grid;
-  grid-template-columns: 1.6fr 0.9fr;
+  grid-template-columns: 1fr;
   gap: 28px;
 }
 
@@ -2811,24 +2811,7 @@ MEDIA GRID
   object-fit: cover;
 }
 
-.side-images {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
 
-.side-images img {
-  width: 100%;
-  height: calc(50% - 14px);
-  object-fit: cover;
-  border-radius: 24px;
-  transition: 0.4s ease;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-}
-
-.side-images img:hover {
-  transform: translateY(-6px);
-}
 
 /* ==================================================
 FEATURE GRID
