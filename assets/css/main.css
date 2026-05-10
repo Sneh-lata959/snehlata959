@@ -2953,14 +2953,14 @@ MOBILE STACKED IMAGES
 
 @media (max-width: 767px) {
 
-  .mobile-stacked-images {
+  .side-images {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-top: 20px;
   }
 
-  .mobile-stacked-images img {
+  .side-images img {
     width: 100%;
     border-radius: 18px;
     display: block;
